@@ -1,0 +1,17 @@
+<div>
+  <h1>New Restaurant</h1>
+<!-- app/views/restaurants/_form.html.erb -->
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category %>
+  <%= f.submit %>
+<% end %>
+
+  <hr>
+  <%= link_to restaurants_path do %>
+    <i></i> Back to list
+  <% end %>
+</div>
+
+
